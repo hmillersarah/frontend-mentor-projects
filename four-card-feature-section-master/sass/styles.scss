@@ -1,0 +1,131 @@
+// Variables
+    // Color
+    $red: hsl(0, 78%, 62%);
+    $cyan: hsl(180, 62%, 55%);
+    $orange: hsl(34, 97%, 64%);
+    $blue: hsl(212, 86%, 64%);
+    $dark-blue: hsl(234, 12%, 34%);
+    $gray-blue: hsl(229, 6%, 66%);
+    $light-gray: hsl(0, 0%, 98%);
+    $attribution-color: hsl(228, 45%, 44%);
+
+    // Font
+    $font-family: 'Poppins';
+    $p-size-sm: 1.4em;
+    $p-size: 1.5em;
+    $h1-size: 2.4em;
+    $h2-size: 2em;
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: $h1-size;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+h2 {
+    font-weight: bold;
+    font-size: $h2-size;
+}
+
+p {
+    font-size: $p-size;
+    color: $gray-blue;
+    margin: 0em;
+    padding: 0em;
+}
+
+body {
+    font-family: $font-family;
+    color: $dark-blue;
+}
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 6em 2em;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 2em 1.8em;
+    border-top: solid 4px;
+    border-radius: 0.8em;
+    padding: 2em;
+    height: 20em;
+    box-shadow: 0 16px 16px hsl(0deg 0% 0% / 0.075);
+
+    p {
+        font-size: $p-size-sm;
+    }
+
+    img {
+        max-width: 5em;
+        max-height: 5em;
+        align-self: flex-end;
+        padding: 1em;
+    }
+
+    :first-child {
+        flex-grow: 1;
+    }
+
+    :last-child {
+        flex-grow: 3;
+    }
+}
+
+.cyan {
+    border-top-color: $cyan;
+}
+
+.red {
+    border-top-color: $red;
+}
+
+.orange {
+    border-top-color: $orange;
+}
+
+.blue {
+    border-top-color: $blue;
+}
+
+.attribution { 
+    font-size: 1.1em; 
+    text-align: center; 
+    margin: 2em;
+
+    a { 
+        color: $attribution-color; 
+    }
+}
+
+@media screen and (min-width: 64em) {
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        width: 34em;
+    }
+}

@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2.4em;
+}
+h1 span {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+  color: hsl(229, 6%, 66%);
+  margin: 0em;
+  padding: 0em;
+}
+
+body {
+  font-family: "Poppins";
+  color: hsl(234, 12%, 34%);
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 6em 2em;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 2em 1.8em;
+  border-top: solid 4px;
+  border-radius: 0.8em;
+  padding: 2em;
+  height: 20em;
+  box-shadow: 0 16px 16px hsla(0, 0%, 0%, 0.075);
+}
+section p {
+  font-size: 1.4em;
+}
+section img {
+  max-width: 5em;
+  max-height: 5em;
+  align-self: flex-end;
+  padding: 1em;
+}
+section :first-child {
+  flex-grow: 1;
+}
+section :last-child {
+  flex-grow: 3;
+}
+
+.cyan {
+  border-top-color: hsl(180, 62%, 55%);
+}
+
+.red {
+  border-top-color: hsl(0, 78%, 62%);
+}
+
+.orange {
+  border-top-color: hsl(34, 97%, 64%);
+}
+
+.blue {
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+.attribution {
+  font-size: 1.1em;
+  text-align: center;
+  margin: 2em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 64em) {
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  section {
+    width: 34em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
