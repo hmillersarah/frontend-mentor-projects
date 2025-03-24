@@ -13,8 +13,9 @@
     $font-family: 'Poppins';
     $p-size-sm: 1.4em;
     $p-size: 1.5em;
-    $h1-size: 2.4em;
-    $h2-size: 2em;
+    $h1-size: 2.8em;
+    $h2-size: 2.8em;
+    $h3-size: 2em;
 
 html {
     font-size: 62.5%;
@@ -23,15 +24,20 @@ html {
 h1 {
     font-weight: 100;
     font-size: $h1-size;
-
-    span {
-        font-weight: bold;
-    }
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
     font-weight: bold;
     font-size: $h2-size;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: $h3-size;
 }
 
 p {
@@ -86,6 +92,10 @@ section {
     }
 }
 
+.title {
+    margin: 2em 0em;
+}
+
 .cyan {
     border-top-color: $cyan;
 }
@@ -127,5 +137,9 @@ section {
 
     section {
         width: 34em;
+    }
+
+    .desc {
+        width: 40%;
     }
 }
