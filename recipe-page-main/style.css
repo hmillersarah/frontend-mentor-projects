@@ -1,0 +1,153 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--stone-100);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Outfit';
+    color: var(--stone-600);
+}
+
+main {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ h1, h2 {
+    font-family: 'Young Serif';
+ }
+
+ h1 {
+    font-size: 3.2rem;
+    color: var(--stone-900);
+    margin: 0;
+ }
+
+ h2 {
+    font-size: 2.4rem;
+    color: var(--brown);
+ }
+
+ h3 {
+    font-size: 1.8rem;
+    color: var(--rose-800);
+ }
+
+ p {
+    line-height: 2.2rem;
+ }
+
+ ul, ol {
+    padding: 0 1rem;
+ }
+
+ li {
+    margin: 1rem 1rem;
+ }
+
+ li::marker, ol::marker {
+    color: var(--rose-800);
+    font-weight: bold;
+ }
+
+ li p {
+    position: relative;
+    left: 1rem;
+ }
+
+ img {
+    width: 100%;
+    border-radius: 0;
+}
+
+hr {
+    margin: 3rem 0;
+    border: 0.1rem solid var(--stone-150);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 0.1rem solid var(--stone-150);
+}
+
+tr:last-child {
+    border: none;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+td:nth-child(2) {
+    color: var(--brown);
+    font-weight: bold;
+}
+
+.card {
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 3rem;
+}
+
+.intro-p {
+    padding: 1rem 0;
+}
+
+.prep-card {
+    background-color: var(--rose-50);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+.attribution { 
+    font-size: 1.1rem; 
+    text-align: center; 
+    margin-bottom: 3rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        border-radius: 1em;
+        width: 90%;
+        margin-top: 2em;
+    }
+
+    .card {
+        width: 50em;
+        margin: 7em;
+    }
+}

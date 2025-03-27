@@ -1,0 +1,199 @@
+// Variables
+// ------------------------------------
+// Colors
+$primary-color-1: hsl(158, 36%, 37%);
+$primary-color-hover: hsl(158, 36%, 25%);
+$primary-color-2: hsl(30, 38%, 92%);
+$neutral-color-1: hsl(212, 21%, 14%);
+$neutral-color-2: hsl(228, 12%, 48%);
+$neutral-color-3: hsl(0, 0%, 100%);
+$footer-color: hsl(228, 45%, 44%); 
+// Fonts
+$font-primary: 'Montserrat';
+$font-secondary: 'Fraunces';
+    // Font sizes mobile
+    $text-base-size: 1.4rem;
+    $heading-size: 3rem;
+    $subheading-size: 1.1rem;
+    // Font sizes desktop
+    $text-base-size-lg: 1.8rem;
+    $heading-size-lg: 4.2rem;
+    $subheading-size-lg: 1.4rem;
+    // Font weights
+    $text-base-weight: 600;
+    $heading-weight: 800;
+// Spacing
+$baseline: 2.4rem;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $text-base-size;
+    font-family: $font-primary;
+    font-weight: $text-base-size;
+    color: $neutral-color-2;
+    background-color: $primary-color-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+
+    justify-content: center;
+}
+
+.card {
+    background-color: $neutral-color-3;
+    width: 90%;
+    margin: 2rem;
+    padding: 0;
+    border-radius: 1rem;
+}
+
+.hero {
+    padding: 0;
+    margin: 0;
+
+    img {
+        border-radius: 1rem 1rem 0rem 0rem;
+        width: 100%;
+    }
+}
+
+.content {
+    padding: 2rem;
+}
+
+h1 {
+    font-family: $font-secondary;
+    font-size: $heading-size;
+    font-weight: $heading-weight;
+    color: $neutral-color-1;
+    margin: 0;
+}
+
+h2 {
+    font-family: $font-secondary;
+    font-size: $heading-size;
+    font-weight: $heading-weight;
+    color: $primary-color-1;
+    margin: 0;
+}
+
+h3 {
+    font-size: $subheading-size;
+    font-weight: $text-base-size;
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.reduced {
+    text-decoration: line-through;
+}
+
+button {
+    background-color: $primary-color-1;
+    color: $neutral-color-3;
+    border-radius: 0.75rem;
+    border: none;
+    padding: 0.5rem;
+    font-family: $font-primary;
+    font-weight: $text-base-weight;
+    margin: 1rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 1.6rem;
+    }
+}
+
+button:hover {
+    background-color: $primary-color-hover;
+}
+
+.attribution { 
+    font-size: 1.1rem; 
+    text-align: center; 
+
+    a { 
+        color: $footer-color;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        font-size: $text-base-size-lg;
+    }
+
+    .hero {
+        height: 100%;
+        width: 75%;
+    
+        img {
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem 0rem 0rem 1rem;
+        object-fit: cover;
+        }
+    }
+
+    .content {
+        width: 60%;
+        padding: 5rem;
+    }
+
+    h1, h2 {
+        font-size: $heading-size-lg;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: $subheading-size-lg;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        margin: 2rem 0rem;
+    }
+
+    .reduced {
+        padding-bottom: 3rem;
+    }
+
+    button {
+        font-size: $text-base-size-lg;
+        margin-top: 2rem;
+
+        img {
+            width: 2rem;
+        }
+    }
+}
