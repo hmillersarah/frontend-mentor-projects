@@ -1,0 +1,51 @@
+// Variables
+$purple-light: hsl(260, 100%, 95%);
+$purple: hsl(264, 82%, 80%);
+$purple-dark: hsl(263, 55%, 52%);
+$light-gray-01: hsl(214, 17%, 92%);
+$light-gray-02: hsl(0, 0%, 81%);
+$gray: hsl(224, 10%, 45%);
+$dark-gray: hsl(217, 19%, 35%);
+$dark-blue: hsl(219, 29%, 14%);
+$attribution-color: hsl(228, 45%, 44%);
+
+$p-size: 1.3em;
+$h1-size: 1.6em;
+$h2-size: 2em;
+$attribution-size: 1.1em;
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: $h1-size;
+}
+
+h2 {
+    font-size: $h2-size;
+}
+
+p {
+    font-size: $p-size;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed';
+}
+
+section {
+    margin: 2em;
+    padding: 3em;
+    background-color: $purple;
+    border-radius: 0.8em;
+}
+
+footer { 
+    font-size: $attribution-size; 
+    text-align: center; 
+}
+
+footer a { 
+    color: $attribution-color;
+}
