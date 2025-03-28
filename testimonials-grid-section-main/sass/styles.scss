@@ -7,11 +7,14 @@ $light-gray-02: hsl(0, 0%, 81%);
 $gray: hsl(224, 10%, 45%);
 $dark-gray: hsl(217, 19%, 35%);
 $dark-blue: hsl(219, 29%, 14%);
+$black: hsl(0, 0%, 7%);
+$white: hsl(0, 0%, 100%);
 $attribution-color: hsl(228, 45%, 44%);
 
 $p-size: 1.3em;
-$h1-size: 1.6em;
-$h2-size: 2em;
+$h1-size: 1.3em;
+$h2-size: 1.2em;
+$h3-size: 2em;
 $attribution-size: 1.1em;
 
 html {
@@ -20,25 +23,79 @@ html {
 
 h1 {
     font-size: $h1-size;
+    font-weight: normal;
+    padding: 0em;
+    margin: 0em;
 }
 
 h2 {
     font-size: $h2-size;
+    font-weight: normal;
+    padding: 0em;
+    margin: 0em;
+}
+
+h3 {
+    font-size: $h3-size;
+    font-weight: 500;
 }
 
 p {
     font-size: $p-size;
 }
 
+img {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    border: 1px solid $light-gray-02;
+}
+
 body {
     font-family: 'Barlow Semi Condensed';
+    margin: 6em 2em;
 }
 
 section {
     margin: 2em;
     padding: 3em;
-    background-color: $purple;
     border-radius: 0.8em;
+    box-shadow: 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+section div:first-child {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+}
+
+section:nth-child(1) {
+    background-color: $purple-dark;
+    color: $white;
+
+    h2, p {
+        color: $purple-light;
+    }
+}
+
+section:nth-child(2) {
+    background-color: $dark-gray;
+    color: $white;
+
+    h2, p {
+        color: $light-gray-02;
+    }
+}
+
+section:nth-child(3), section:nth-child(5) {
+    h1 {
+        color: $dark-blue;
+    }
+}
+
+section:nth-child(4) {
+    background-color: $black;
+    color: $white;
 }
 
 footer { 
