@@ -19,8 +19,16 @@ $attribution-size: 1.1em;
 
 // TO DO
 // - Font weight
-// - Shadow
-// - Desktop layout
+
+@font-face{
+    font-family: 'Barlow Semi Condensed';
+    src: url('../fonts/BarlowSemiCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Barlow Semi Condensed Bold';
+    src: url('../fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');
+}
 
 html {
     font-size: 62.5%;
@@ -44,11 +52,13 @@ h2 {
 
 h3 {
     font-size: $h3-size;
-    font-weight: 500;
+    font-family: 'Barlow Semi Condensed Bold';
+    font-weight: normal;
 }
 
 p {
     font-size: $p-size;
+    line-height: 1.5;
 }
 
 div img {
@@ -60,6 +70,10 @@ div img {
 
 body {
     font-family: 'Barlow Semi Condensed';
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -85,13 +99,15 @@ section div:first-child {
     gap: 1em;
 }
 
+section div div {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.2em;
+}
+
 section:nth-child(1) {
     background-color: $purple-dark;
-    color: $white;
-
-    h2, p {
-        color: $purple-light;
-    }
+    color: $purple-light;
 }
 
 section:nth-child(2) {
@@ -106,22 +122,22 @@ section:nth-child(2) {
 section:nth-child(3) {
     background-color: $white;
 
-    h1 {
-        color: $dark-blue;
+    h1, h3 {
+        color: $dark-gray;
     }
 }
 
 section:nth-child(4) {
-    background-color: $black;
-    color: $white;
+    background-color: $dark-blue;
+    color: $light-gray-02;
 
 }
 
 section:nth-child(5) {
     background-color: $white; 
 
-    h1 {
-        color: $dark-blue;
+    h1, h3 {
+        color: $dark-gray;
     }
 }
 
