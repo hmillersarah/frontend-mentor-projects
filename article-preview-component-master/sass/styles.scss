@@ -8,6 +8,7 @@ $white: #fff;
 $h1-size: 1.8em;
 $h2-size: 1.4em;
 $h3-size: 1.4em;
+$h4-size: 1.6em;
 $p-size: 1.4em;
 
 @font-face {
@@ -54,6 +55,14 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    font-size: $h4-size;
+    color: $grayish-blue;
+    font-family: 'Manrope Semi Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.4em;;
+}
+
 p {
     font-size: $p-size;
     color: $grayish-blue;
@@ -85,17 +94,17 @@ main {
 }
 
 .desc {
-    padding: 1.2em 3em 0.2em 3em;
+    padding: 1.2em 3em 0em 3em;
 }
 
 .profile {
-    padding: 0em 3em 2em 3em;
+    padding: 2em 3em 2em 3em;
     display: flex;
     flex-flow: row nowrap;
     gap: 2em;
     align-items: center;
 
-    img {
+    .avatar {
         border-radius: 50%;
         width: 5em;
         height: 5em;
@@ -105,6 +114,33 @@ main {
         display: flex;
         flex-flow: column wrap;
         gap: 0.6em;
+    }
+
+    .share-btn {
+        border-radius: 50%;
+        overflow: visible;
+        background-color: $light-grayish-blue;
+        padding: 1em;
+        animation: transform 0.2s;
+    }
+
+    .share-btn:hover {
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+}
+
+.share {
+    background-color: $very-dark-grayish-blue;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2em;
+    align-items: center;
+    padding: 0em 2em;
+
+    img {
+        width: 2em;
+        height: 2em;
     }
 }
 
